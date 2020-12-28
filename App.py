@@ -26,4 +26,4 @@ api.add_resource(StoreList,'/stores')
 if __name__ == '__main__':
     from config import db
     db.init_app(app)
-    app.run()
+    app.run(host = '0.0.0.0',port=5005)
