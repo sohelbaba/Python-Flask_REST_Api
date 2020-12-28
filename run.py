@@ -1,5 +1,5 @@
-from app import app
 from config import db
+from app import app
 
 db.init_app(app)
 
