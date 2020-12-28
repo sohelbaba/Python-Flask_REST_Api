@@ -7,3 +7,6 @@ db.init_app(app)
 def create_table():
     db.create_all()
 
+
+#deploy link rest-api
+#https://stores-python-flask-api.herokuapp.com/items
