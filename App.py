@@ -13,11 +13,6 @@ app.secret_key = 'secure'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///store.db'
 
-@app.before_first_request
-def create_table():
-    db.create_all()
-
-
 jwt = JWT(app,authentication,identity)
 api = Api(app)
 
