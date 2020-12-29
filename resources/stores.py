@@ -18,7 +18,6 @@ class Store(Resource):
         store.save_to_db()
         return {"message" : "StoreCreated.."}
 
-    @jwt_required()
     def delete(self,name):
         store = StoreModel.find_by_name(name)
         if store:
